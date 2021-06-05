@@ -15,7 +15,7 @@ app.use(Express.static("public"));
 app.use(Express.urlencoded({ extended: true }));
 
 mongoose
-  .connect(process.env.MONGO, {
+  .connect(process.env.mongodb+srv://admin-vishal:1234@cluster0.qm1km.mongodb.net/thoughtbook?retryWrites=true&w=majority, {
     useCreateIndex: true,
     useFindAndModify: false,
     useNewUrlParser: true,
